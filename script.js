@@ -3,6 +3,7 @@ const button2 = document.getElementById("btn2");
 const img = document.getElementById("img1");
 const h1 = document.getElementById("h1");
 const audio = document.getElementById("sound");
+const heart = document.getElementById("heart");
 
 function Ahuela() {
     button1.style.width = "100%";
@@ -15,6 +16,7 @@ function Ahuela() {
     button1.style.fontSize = "100px";
     button2.remove();
     audio.play(); // Добавляем звук при клике
+    img.src = "esli-muzhchina-zamahivaetsya-na-zhenshhinu.png"
 }
 
 function NeAhuela() {
@@ -23,9 +25,10 @@ function NeAhuela() {
     img.src = "Agu.gif";
     button1.remove();
     button2.remove();
-    audio.play();
+    audio.play(); // Добавляем звук при клике
 }
 
 document.addEventListener("DOMContentLoaded", function() {
     audio.volume = 0.3;
 });
+
