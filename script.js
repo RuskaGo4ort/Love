@@ -5,8 +5,8 @@ const h1 = document.getElementById("h1");
 
 
 function Ahuela() {
-    button1.style.width = "100%";
-    button1.style.height = "100%";
+    button1.style.width = "2000px";
+    button1.style.height = "2000px";
     button1.style.cursor = "pointer";
     button1.style.color = "#ffffff"
     button1.style.backgroundColor = "#E01010FF"
