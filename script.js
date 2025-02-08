@@ -18,7 +18,7 @@ function Ahuela() {
 function NeAhuela() {
     h1.textContent = "УРАААА";
     h1.style.color = "#09dc09"
-    img.src = "Gif/Agu.gif";
+    img.src = "Agu.gif";
     button1.remove()
     button2.remove()
 
