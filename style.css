@@ -11,10 +11,7 @@ body {
     justify-content: center;
     background: #ffdde1;
 }
-.button-container {
-    display: flex;
-    gap: 10px;
-}
+
 .btn1, .btn2 {
     display: flex;
     justify-content: center;
@@ -23,15 +20,20 @@ body {
     padding: 10px;
     width: 100px;
     border: solid black 3px;
-    transition: background-color 0.5s ease-in-out;
     cursor: pointer;
     position: relative;
     overflow: hidden;
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
+
 .btn1 {
     background-color: #07a107;
-    gap: 20px;
 }
+
+.btn1:active {
+    transform: scale(0.9); /* Плавное уменьшение при клике */
+}
+
 .btn1:hover {
     background-color: #09dc09;
 }
@@ -39,10 +41,14 @@ body {
 .btn2 {
     background-color: #ba0909;
 }
+
+.btn2:active {
+    transform: scale(0.9); 
+}
+
 .btn2:hover {
     background-color: #e01010;
 }
-
 img {
     border: solid black 3px;
     border-radius: 10px;
@@ -82,4 +88,3 @@ img:hover {
         padding: 10px; /* Добавляет отступы */
     }
 }
-
