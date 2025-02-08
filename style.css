@@ -67,3 +67,19 @@ img:hover {
     padding: 10px;
     margin-left: -5px;
 }
+@media (max-width: 700px) {
+    h1 {
+        font-size: 20px;
+    }
+    .btn1, .btn2 {
+        font-size: 16px;
+        padding: 10px;
+    }
+}
+@media (max-width: 700px) {
+    body {
+        width: 100%; /* Растягивает на всю ширину экрана */
+        padding: 10px; /* Добавляет отступы */
+    }
+}
+
