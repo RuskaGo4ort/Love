@@ -15,8 +15,10 @@ function Ahuela() {
     button1.textContent = 'Я СКАЗАЛ "ДА"'
     button1.style.fontSize = "100px";
     button2.remove();
-    audio.play(); // Добавляем звук при клике
+    audio.play(); 
     img.src = "esli-muzhchina-zamahivaetsya-na-zhenshhinu.png"
+    h1.textContent = "ЕСЛИ НЕ НАЖМЁШЬ ДА СНОВА, то... ничего";
+    h1.style.color = "#8B0000"
 }
 
 function NeAhuela() {
@@ -25,8 +27,14 @@ function NeAhuela() {
     img.src = "Agu.gif";
     button1.remove();
     button2.remove();
+    const newDiv = document.createElement('div');
+    newDiv.textContent = 'Спасибо что ты есть';
+    newDiv.classList.add('new-element');
+    document.body.appendChild(newDiv);
     audio.play(); // Добавляем звук при клике
 }
+
+
 
 document.addEventListener("DOMContentLoaded", function() {
     audio.volume = 0.3;
